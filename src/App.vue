@@ -33,4 +33,22 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+a:visited {
+    color: #c6d1de;
+    text-decoration: none;
+}
+
+a:active {
+    color: #c6d1de;
+    text-decoration: none;
+}
+
+a {
+    color: #c6d1de;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
 </style>
