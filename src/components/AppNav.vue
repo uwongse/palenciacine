@@ -7,16 +7,16 @@
         <b-collapse id="nav-collapse" variant="dark" is-nav>
             <b-navbar-nav id="items">
                 <b-nav-item class="letra">
-                    <router-link to="/">Cine</router-link>
+                    <router-link  to="/">Cine</router-link >
                 </b-nav-item>
                 <b-nav-item class="letra">
-                    <router-link to="/teatro">Teatro</router-link>
+                    <router-link  to="/teatro">Teatro</router-link>
                 </b-nav-item>
-                <b-nav-item class="letra">
-                    <router-link to="/promociones">Promociones</router-link>
+                <b-nav-item class="letra" >
+                    <router-link  to="/promociones">Promociones</router-link>
                 </b-nav-item>
-                <b-nav-item class="letra">
-                    <router-link to="/contacto">Contacto</router-link>
+                <b-nav-item class="letra" >
+                    <router-link  to="/contacto">Contacto</router-link>
                 </b-nav-item>
             </b-navbar-nav>
 
@@ -49,21 +49,22 @@ export default {
 <style>
 a:visited {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 a:active {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 a {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 a:hover {
-    color: white;
+    color: white!important;
+    text-decoration: none!important;
 }
 
 .navbar-toggler.collapsed {

@@ -33,23 +33,23 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
-
-router-link:visited {
+a:visited {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
-router-link:active {
+a:active {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
-router-link {
+a {
     color: #c6d1de;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
-router-link:hover {
-    color: white;
+a:hover {
+    color: white!important;
+    text-decoration: none!important;
 }
 </style>
