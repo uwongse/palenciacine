@@ -49,7 +49,7 @@ a {
 }
 
 a:hover {
-    color: white!important;
+    color: white;
     text-decoration: none!important;
 }
 </style>
