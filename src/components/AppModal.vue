@@ -22,6 +22,7 @@
                                         <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow" v-bind:style="time() <= getHumanDate(dat.hour) ? 'color: #ede60e':'color: #737571'">{{ dat.hour}} </span></section></section>
                                     </section>
                                     <section class="hour" v-else>
+                                    <article class="fecha"><span>Fecha: {{dato.projections[0].release_date}}</span></article>
                                     <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow">{{ dat.hour}} </span></section></section>
                                     </section>
                                     <a id="boton" type="button" class="btn-sm" :href="`${dato.buy}`"><b>Comprar entradas</b></a>

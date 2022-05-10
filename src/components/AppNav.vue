@@ -57,11 +57,6 @@ a:active {
     text-decoration: none!important;
 }
 
-a {
-    color: #c6d1de;
-    text-decoration: none!important;
-}
-
 a:hover {
     color: white!important;
     text-decoration: none!important;
@@ -317,5 +312,12 @@ ul.dropdown-menu.dropdown-menu-right.show {
         justify-content: flex-end;
         background-color: transparent !important;
     }
+}
+</style>
+
+<style scoped>
+a {
+    color: #c6d1de!important;
+    text-decoration: none!important;
 }
 </style>
