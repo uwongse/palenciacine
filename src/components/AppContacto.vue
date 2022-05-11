@@ -91,8 +91,8 @@ export default {
   data () {
     return {
       form: {
-        email: '',
         name: '',
+        email: '',
         mensaje: ''
       },
       show: true
