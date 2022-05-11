@@ -25,10 +25,10 @@ export default {
     AppFooter, AppCarrusel, AppTeatro, AppPromociones, AppModal, AppProximamente, AppCartelera
   },
   mounted () {
-    axios.get('http://localhost/api/moviestoday', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
-    axios.get('http://localhost/api/moviesnottoday', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
-    axios.get('http://localhost/api/teatro', {}).then(resp => { this.teatro = resp.data.data; console.log(resp.data.data) })
-    axios.get('http://localhost/api/slide', {}).then(resp => { this.slide = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/moviestoday', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/moviesnottoday', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/teatro', {}).then(resp => { this.teatro = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/slide', {}).then(resp => { this.slide = resp.data.data; console.log(resp.data.data) })
   },
   data () {
     return {

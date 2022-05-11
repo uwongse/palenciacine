@@ -42,7 +42,6 @@
                     </article>
                 </article>
             </article>
-            <article v-else> <article  class="px-2"><span id="color">No hay sesiones disponibles para hoy.</span></article> </article>
         </section>
     </article>
 </article>
