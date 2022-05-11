@@ -11,7 +11,7 @@
                         <p>Si tienes alguna duda o sugerencia sobre el funcionamiento de nuestras salas o de la programación cultural, rellena este formulario</p>
                     </section>
                     <section id="formulario">
-                        <b-form id="for" @submit="onSubmit" v-if="show">
+                        <b-form id="for" v-on:submit.prevent="submitForm" v-if="show">
                             <b-form-group id="input-group-1" label-for="input-1">
                                 <b-form-input id="input-1" v-model="form.name" placeholder="Nombre y apellidos" required></b-form-input>
                             </b-form-group>
@@ -84,6 +84,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'app-contacto',
   data () {
@@ -97,9 +99,15 @@ export default {
     }
   },
   methods: {
-    onSubmit (event) {
-      event.preventDefault()
-      alert(JSON.stringify(this.form))
+    submitForm () {
+      axios
+        .post(
+          'http://localhost/api/send',
+          this.form
+        )
+        .then(res => {
+          this.sent = true
+        })
     }
   }
 }
