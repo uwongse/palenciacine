@@ -11,7 +11,7 @@
                         <p>Si tienes alguna duda o sugerencia sobre el funcionamiento de nuestras salas o de la programación cultural, rellena este formulario</p>
                     </section>
                     <section id="formulario">
-                        <b-form id="for" v-on:submit.prevent="submitForm" v-if="show">
+                        <b-form id="for" @submit.prevent="submitForm" v-if="show">
                             <b-form-group id="input-group-1" label-for="input-1">
                                 <b-form-input id="input-1" v-model="form.name" placeholder="Nombre y apellidos" required></b-form-input>
                             </b-form-group>
@@ -103,10 +103,14 @@ export default {
       axios
         .post(
           'https://seashell-app-se7bo.ondigitalocean.app/api/send',
-          this.form
+          {
+            name: this.form.name,
+            email: this.form.email,
+            mensaje: this.form.mensaje
+          }
         )
         .then(res => {
-          this.sent = true
+          console.log(res)
         })
     }
   }
