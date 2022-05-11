@@ -102,7 +102,7 @@ export default {
     submitForm () {
       axios
         .post(
-          'http://localhost/api/send',
+          'https://seashell-app-se7bo.ondigitalocean.app/api/send',
           this.form
         )
         .then(res => {
