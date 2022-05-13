@@ -3,7 +3,7 @@
     <PopupRouterView>
         <PopupOverlay slot="backdrop" />
         <PopupLightbox>
-            <b-card id="carta" img-top img-alt="Card Image" text-variant="white" v-for="dato in pelicula" :key="dato.id" :img-src="`${dato.background}`">
+            <b-card id="carta" img-top img-alt="Card Image" text-variant="white" v-for="dato in pelicula" :key="dato.id" :img-src="`${dato.background}`" :style="styleObject">
                 <section :class="[{all2: dato.background }, {backgroundNo: !dato.background }]">
                     <section class="cuerpo mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1" id="margen">
                         <h3 id="titulo" class="white">{{dato.title}}</h3>
@@ -104,7 +104,11 @@ export default {
   },
   data () {
     return {
-      pelicula: []
+      pelicula: [],
+      styleObject: {
+        color: 'black',
+        border: '2px solid black'
+      }
     }
   }
 }
