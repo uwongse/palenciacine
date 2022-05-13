@@ -158,7 +158,7 @@ p {
     gap: 2vw;
     background: url('/assets/negro.jpg');
     background-color: rgb(14, 14, 14);
-    margin-top: -20vw;
+    margin-top: 0vw;
     position: relative;
     z-index: 1000000;
 }
@@ -347,7 +347,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -14vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -416,7 +416,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -15vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -437,7 +437,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -35vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -475,7 +475,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -11vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -544,7 +544,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -9vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -573,7 +573,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -8vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -641,7 +641,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -6vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -683,7 +683,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -6vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -754,7 +754,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -5vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
@@ -978,7 +978,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: -5vw;
+        margin-top: 0vw;
         position: relative;
         z-index: 1000000;
     }
