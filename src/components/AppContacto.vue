@@ -10,8 +10,9 @@
                     <section id="texto">
                         <p>Si tienes alguna duda o sugerencia sobre el funcionamiento de nuestras salas o de la programación cultural, rellena este formulario</p>
                     </section>
+
                     <section id="formulario">
-                        <b-form id="for" @submit.prevent="submitForm" v-if="show">
+                        <b-form id="for" @submit.prevent="submitForm" v-if="show" >
                             <b-form-group id="input-group-1" label-for="input-1">
                                 <b-form-input id="input-1" v-model="form.name" placeholder="Nombre y apellidos" required></b-form-input>
                             </b-form-group>
@@ -24,8 +25,17 @@
                                 <b-form-textarea id="input-3" v-model="form.mensaje" placeholder="Mensaje" required></b-form-textarea>
                             </b-form-group>
                             <section id="botones">
-                                <b-button id="enviar" type="submit" variant="btn btn-primary-outline">Enviar</b-button>
+                                <b-button  id="enviar" type="submit" variant="btn btn-primary-outline" @click="showAlert">Enviar</b-button>
                                 <b-button id="borrar" type="reset" variant="btn btn-primary-outline">Borrar</b-button>
+                            </section>
+                            <section v-if="savingSuccessful">
+                                                          <b-alert
+                                    :show="dismissCountDown"
+                                    @dismissed="dismissCountDown=0"
+                                    @dismiss-count-down="countDownChanged"
+                                    variant="success">
+                                    Enviado
+                                </b-alert>
                             </section>
                         </b-form>
                     </section>
@@ -85,7 +95,7 @@
 
 <script>
 import axios from 'axios'
-
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   name: 'app-contacto',
   data () {
@@ -95,11 +105,14 @@ export default {
         email: '',
         mensaje: ''
       },
-      show: true
+      savingSuccessful: false,
+      show: true,
+      dismissSecs: 2,
+      dismissCountDown: 0
     }
   },
   methods: {
-    submitForm () {
+    submitForm (e) {
       axios
         .post(
           'https://seashell-app-se7bo.ondigitalocean.app/api/send',
@@ -111,7 +124,20 @@ export default {
         )
         .then(res => {
           console.log(res)
-        })
+        }).then(
+          this.form.name = '',
+          this.form.email = '',
+          this.form.mensaje = '',
+          this.savingSuccessful = true,
+          e.preventDefault()
+        )
+    },
+    countDownChanged (dismissCountDown) {
+      this.dismissCountDown = dismissCountDown
+    },
+    showAlert () {
+      this.dismissCountDown = this.dismissSecs
+      this.savingSuccessful = false
     }
   }
 }
@@ -365,6 +391,12 @@ section {
 }
 
 @media screen and (max-width:425px) {
+         p {
+        font-size: 4vw;
+    }
+     .title {
+        font-size: 8vw;
+    }
     #texto {
         font-size: 5vw;
     }
@@ -408,6 +440,15 @@ section {
 }
 
 @media screen and (max-width:768px) {
+     p {
+        font-size: 3vw;
+    }
+                #cineabajo {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        gap: 2vw;
+    }
     .movies-list {
         display: flex;
         flex-direction: row;
@@ -417,7 +458,7 @@ section {
     }
 
     .title {
-        font-size: 3vw;
+        font-size: 6vw;
     }
 
     #textform {
@@ -446,12 +487,19 @@ section {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
+
+        #cineabajo {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        gap: 2vw;
+    }
     #textform {
         font-size: 2vw;
     }
 
     .title {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .movies-list {
@@ -471,12 +519,21 @@ section {
 }
 
 @media screen and (min-width:1024px) {
+            #cineabajo {
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        gap: 2vw;
+    }
+    .title {
+        font-size: 3vw;
+    }
     h2 {
         font-size: 2vw;
     }
 
     p {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     img {
@@ -493,7 +550,7 @@ section {
     }
 
     p {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     img {
@@ -505,6 +562,12 @@ section {
 }
 
 @media screen and (min-width:2560px) {
+        #cineabajo {
+        display: flex;
+        flex-direction: column;
+        margin-top: -120px;
+        gap: 2vw;
+    }
     #input-1 {
         font-size: 1vw;
     }
@@ -522,7 +585,7 @@ section {
     }
 
     p {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 
     img {
