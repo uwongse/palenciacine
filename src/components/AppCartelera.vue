@@ -17,9 +17,9 @@
                             <section :class="[{estreno: movie.active ==1 }]"></section>
                             <img id="img" :src="`${movie.poster}`" alt="">
                         </section>
-                        <article class="details">
+                        <article class="details" v-if="movie.projections[0]">
                             <router-link class="item" :to="{path:`cartelera/${movie.id}/${sanitizeTitle(movie.title)}`}" >
-                                <h2>{{movie.projections[0].cinema.cinema}}</h2>
+                            <div><h2>{{movie.projections[0].cinema.cinema}}</h2></div>                       
                             </router-link>
                             <section class="detalles">
                                 <router-link class="item" :to="{path:`cartelera/${movie.id}/${sanitizeTitle(movie.title)}`}" >
