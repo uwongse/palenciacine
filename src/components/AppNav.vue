@@ -57,6 +57,11 @@ a:active {
     text-decoration: none!important;
 }
 
+a {
+    color: #c6d1de;
+    text-decoration: none!important;
+}
+
 a:hover {
     color: white!important;
     text-decoration: none!important;
