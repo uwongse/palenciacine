@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppTeatroOrtega from '../components/AppTeatroOrtega.vue'
+import AppTeatroOrtega from '@/components/AppTeatroOrtega.vue'
 export default {
   components: {
     AppTeatroOrtega

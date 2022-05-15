@@ -1,9 +1,9 @@
 <template>
 <section id="carrusel">
-    <b-carousel id="carousel-1" :interval="4000" controls indicators background="#141414">
+    <b-carousel id="carousel1" :interval="4000" controls indicators background="#141414">
         <b-carousel-slide id="slideArriba"  v-for="s in slide" :key="s.id">
             <template #img>
-               <a :href="`${s.url}`"><img id="image" class="d-block img-fluid w-100" :src="`${s.image}`" :alt="`${s.title}`"></a>
+               <a :href="`${s.url}`"><img id="image" class="d-block img-fluid w-100 h-100" :src="`${s.image}`" :alt="`${s.title}`"></a>
             </template>
         </b-carousel-slide>
     </b-carousel>
@@ -40,38 +40,27 @@ export default {
 </style>
 
 <style scoped>
-#carrusel{
-    z-index: 99999999999999999999;
-}
-#slideArriba {
-    margin-top: 2vw;
-
-}
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1024px) {
     #slideArriba {
+        height: 40vw;
         margin-top: 5vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     #slideArriba {
-        margin-top: 10vw;
+        height: 50vw;
+        margin-top: 5vw;
+
     }
 }
 
 @media screen and (max-width: 425px) {
 
-    .carousel-control-next-icon{
-        margin-top: 14vw;
-    z-index: 99999999999999999999;
-}
-.carousel-control-prev-icon{
-    margin-top: 14vw;
-    z-index: 99999999999999999999;
-}
     #slideArriba {
-        margin-top: 14vw;
+        height: 50vw;
+        margin-top: 5vw;
+
     }
 }
 </style>

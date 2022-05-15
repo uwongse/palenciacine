@@ -10,13 +10,13 @@
 
 <script>
 // @ is an alias to /src
-import AppCartelera from '../components/AppCartelera.vue'
-import AppFooter from '../components/AppFooter.vue'
-import AppCarrusel from '../components/AppCarrusel.vue'
-import AppTeatro from '../components/AppTeatro.vue'
-import AppPromociones from '../components/AppPromociones.vue'
-import AppModal from '../components/AppModal.vue'
-import AppProximamente from '../components/AppProximamente.vue'
+import AppCartelera from '@/components/AppCartelera.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppCarrusel from '@/components/AppCarrusel.vue'
+import AppTeatro from '@/components/AppTeatro.vue'
+import AppPromociones from '@/components/AppPromociones.vue'
+import AppModal from '@/components/AppModal.vue'
+import AppProximamente from '@/components/AppProximamente.vue'
 import axios from 'axios'
 
 export default {

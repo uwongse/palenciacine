@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppCineOrtega from '../components/AppCineOrtega.vue'
+import AppCineOrtega from '@/components/AppCineOrtega.vue'
 export default {
   components: {
     AppCineOrtega

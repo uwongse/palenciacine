@@ -378,7 +378,7 @@ p {
     }
 
     .all2 {
-        margin-top: -26vw;
+        margin-top: -20vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -447,7 +447,7 @@ p {
     }
 
     .all2 {
-        margin-top: -45vw;
+        margin-top: -40vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -502,11 +502,11 @@ p {
     }
 
     #titulo {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .all2 {
-        margin-top: -22vw;
+        margin-top: -20vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -600,11 +600,11 @@ p {
     }
 
     #titulo {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .all2 {
-        margin-top: -19vw;
+        margin-top: -15vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -651,7 +651,7 @@ p {
     }
 
     .all2 {
-        margin-top: -16vw;
+        margin-top: -10vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -710,11 +710,11 @@ p {
     }
 
     #titulo {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .all2 {
-        margin-top: -20vw;
+        margin-top: -10vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
     }
@@ -784,6 +784,11 @@ p {
     #carta {
         max-width: 1000px;
     }
+     .all2 {
+        margin-top: -10vw;
+        background: rgb(14, 14, 14);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    }
 }
 
 @media screen and (min-width:1940px) {
@@ -820,6 +825,11 @@ p {
 
     #carta {
         max-width: 1500px;
+    }
+         .all2 {
+        margin-top: -10vw;
+        background: rgb(14, 14, 14);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
@@ -867,6 +877,11 @@ p {
 
     #carta {
         max-width: 1800px;
+    }
+         .all2 {
+        margin-top: -10vw;
+        background: rgb(14, 14, 14);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
     }
 }
 

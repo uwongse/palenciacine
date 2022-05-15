@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppContacto from '../components/AppContacto.vue'
+import AppContacto from '@/components/AppContacto.vue'
 export default {
   components: {
     AppContacto

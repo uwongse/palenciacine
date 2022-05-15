@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppMulticinesAvenida from '../components/AppMulticinesAvenida.vue'
+import AppMulticinesAvenida from '@/components/AppMulticinesAvenida.vue'
 export default {
   components: {
     AppMulticinesAvenida

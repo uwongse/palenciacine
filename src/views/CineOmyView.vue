@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppCineOmy from '../components/AppCineOmy.vue'
+import AppCineOmy from '@/components/AppCineOmy.vue'
 export default {
   components: {
     AppCineOmy

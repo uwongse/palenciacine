@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const HomeView = () => import('../views/HomeView.vue')
-const ContactoView = () => import('../views/ContactoView.vue')
-const AboutView = () => import('../views/AboutView.vue')
-const AppModal = () => import('../components/AppModal.vue')
-const TeatroView = () => import('../views/TeatroView.vue')
-const CineOrtegaView = () => import('../views/CineOrtegaView.vue')
-const CineOmyView = () => import('../views/CineOmyView.vue')
-const MulticinesAvenidaView = () => import('../views/MulticinesAvenidaView.vue')
-const TeatroOrtegaView = () => import('../views/TeatroOrtegaView.vue')
+const HomeView = () => import('@/views/HomeView.vue')
+const ContactoView = () => import('@/views/ContactoView.vue')
+const AboutView = () => import('@/views/AboutView.vue')
+const AppModal = () => import('@/components/AppModal.vue')
+const TeatroView = () => import('@/views/TeatroView.vue')
+const CineOrtegaView = () => import('@/views/CineOrtegaView.vue')
+const CineOmyView = () => import('@/views/CineOmyView.vue')
+const MulticinesAvenidaView = () => import('@/views/MulticinesAvenidaView.vue')
+const TeatroOrtegaView = () => import('@/views/TeatroOrtegaView.vue')
 
 Vue.use(Router)
 
