@@ -116,7 +116,7 @@ export default {
 
 <style scoped>
 a:hover {
-    color: rgb(220, 219, 219)!important;
+    color: black!important;
     text-decoration: none!important;
 }
 .colorGray{

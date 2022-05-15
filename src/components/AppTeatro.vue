@@ -308,6 +308,10 @@ export default {
     font-weight: 300;
     font-size: 1vw;
 }
+a:hover {
+    color: black!important;
+    text-decoration: none!important;
+}
 
 a:visited {
     color: black;
