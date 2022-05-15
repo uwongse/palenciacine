@@ -107,7 +107,7 @@ export default {
       pelicula: [],
       styleObject: {
         color: 'black',
-        border: '2px solid black'
+        border: '0.5px solid black'
       }
     }
   }
@@ -116,7 +116,7 @@ export default {
 
 <style scoped>
 a:hover {
-    color: rgb(24, 24, 24)!important;
+    color: rgb(220, 219, 219)!important;
     text-decoration: none!important;
 }
 .colorGray{
