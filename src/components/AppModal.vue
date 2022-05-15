@@ -107,7 +107,7 @@ export default {
       pelicula: [],
       styleObject: {
         color: 'black',
-        border: '3px solid black'
+        border: '2px solid black'
       }
     }
   }
