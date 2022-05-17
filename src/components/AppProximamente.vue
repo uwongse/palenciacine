@@ -23,7 +23,7 @@
                                 <router-link class="item" :to="{path:`proximamente/${movie.id}/${sanitizeTitle(movie.title)}`}" >
                                     <section>
                                         <h2>{{movie.title}}</h2>
-                                        <p>Fecha: {{movie.projections[0].release_date}}</p>
+                                        <p>{{transformFecha(movie.projections[0].release_date)}}</p>
                                         <section id="horas">
                                             <section v-for="hour in movie.projections" :key="hour.id">
                                                 <p>{{hour.hour}}&nbsp;</p>
@@ -47,6 +47,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 export default {
   name: 'app-proximamente',
   props: {
@@ -74,6 +75,11 @@ export default {
       // Change whitespace to "-"
       slug = slug.replace(/\s+/g, '-')
       return slug
+    },
+    transformFecha: function (fecha) {
+      moment.locale('es')
+      var date = moment(fecha, 'YYYY/MM/DD')
+      return date.format('dddd D [de] MMMM ').toUpperCase()
     }
   }
 }

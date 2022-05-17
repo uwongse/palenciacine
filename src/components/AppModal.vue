@@ -17,12 +17,15 @@
                         <section id="der">
                             <section id="horarios" v-if="dato.projections">
                                 <section id="cineortega">
-                                    <section class="titular"><img id="logoentrada" src="../assets/entrada.png" alt=""><span id="titulosgrandes">{{dato.projections[0].cinema.cinema}}</span></section>
+                                    <section class="titular">
+                                        <img id="logoentrada" src="../assets/entrada.png" alt="">
+                                        <span id="titulosgrandes">{{dato.projections[0].cinema.cinema}}</span>
+                                    </section>
                                     <section class="hour" v-if="currentRouteName() == 'cartelera'">
                                         <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow" v-bind:style="time() <= getHumanDate(dat.hour) ? 'color: #ede60e':'color: #737571'">{{ dat.hour}} </span></section></section>
                                     </section>
                                     <section class="hour" v-else>
-                                    <article class="fecha"><span id="yellow">Fecha: {{dato.projections[0].release_date}}</span></article>
+                                    <article class="fecha"><span id="yellow">{{transformFecha(dato.projections[0].release_date)}}</span></article>
                                     <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow">{{ dat.hour}} </span></section></section>
                                     </section>
                                     <a id="boton" type="button" class="btn-sm" :href="`${dato.buy}`"><b>Comprar entradas</b></a>
@@ -100,6 +103,11 @@ export default {
     getHumanDate: function (date) {
       console.log(moment(date, 'HH:mm').format('HH:mm'))
       return moment(date, 'HH:mm').format('HH:mm')
+    },
+    transformFecha: function (fecha) {
+      moment.locale('es')
+      var date = moment(fecha, 'YYYY/MM/DD')
+      return date.format('dddd DD [de] MMMM ').toUpperCase()
     }
   },
   data () {
@@ -966,7 +974,7 @@ p {
     }
 
    * {
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 
     .cuerpo {
