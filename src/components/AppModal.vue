@@ -888,7 +888,7 @@ p {
     }
 
     #carta {
-        max-width: 1800px;
+        max-width: 2000px;
     }
          .all2 {
         margin-top: -10vw;
@@ -922,15 +922,20 @@ p {
     }
 
     #img {
-        max-width: 600px;
+        max-width: 700px;
     }
 
     #carta {
-        max-width: 2600px;
+        max-width: 2800px;
     }
 }
 
 @media screen and (min-width:4560px) {
+        #cineortega {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5vw;
+    }
     .estreno {
         background: url('../assets/estreno250.png') no-repeat;
         height: 250px;
@@ -950,15 +955,20 @@ p {
     }
 
     #img {
-        max-width: 600px;
+        max-width: 800px;
     }
 
     #carta {
-        max-width: 3500px;
+        max-width: 3200px;
     }
 }
 
 @media screen and (min-width:5560px) {
+            #cineortega {
+        display: flex;
+        flex-direction: row;
+        gap: 0.8vw;
+    }
     .estreno {
         background: url('../assets/estreno350.png') no-repeat;
         height: 350px;
@@ -969,8 +979,8 @@ p {
     }
 
     #logoentrada {
-        max-height: 100px;
-        max-width: 100px;
+        max-height: 120px;
+        max-width: 120px;
     }
 
    * {
@@ -992,6 +1002,11 @@ p {
 }
 
 @media screen and (min-width:7560px) {
+            #cineortega {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5vw;
+    }
     .estreno {
         background: url('../assets/estreno500.png') no-repeat;
         height: 500px;
@@ -1037,6 +1052,11 @@ p {
     }
 }
 @media screen and (min-width:8560px) {
+            #cineortega {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5vw;
+    }
         #img {
         max-width: 1800px;
     }
