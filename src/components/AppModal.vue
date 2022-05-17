@@ -107,7 +107,7 @@ export default {
     transformFecha: function (fecha) {
       moment.locale('es')
       var date = moment(fecha, 'YYYY/MM/DD')
-      return date.format('dddd DD [de] MMMM ').toUpperCase()
+      return date.format('dddd D [de] MMMM ').toUpperCase()
     }
   },
   data () {
