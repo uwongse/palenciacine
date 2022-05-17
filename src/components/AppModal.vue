@@ -908,8 +908,8 @@ p {
     }
 
     #logoentrada {
-        max-height: 55px;
-        max-width: 55px;
+        max-height: 60px;
+        max-width: 60px;
     }
 
     * {
@@ -969,8 +969,8 @@ p {
     }
 
     #logoentrada {
-        max-height: 80px;
-        max-width: 80px;
+        max-height: 100px;
+        max-width: 100px;
     }
 
    * {
@@ -1015,8 +1015,8 @@ p {
     }
 
     #logoentrada {
-        max-height: 100px;
-        max-width: 100px;
+        max-height: 150px;
+        max-width: 150px;
     }
 
     * {
