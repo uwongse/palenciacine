@@ -1,69 +1,61 @@
 <template>
-<article class="all">
+<section class="all">
     <PopupRouterView>
         <PopupOverlay slot="backdrop" />
         <PopupLightbox>
-            <b-card id="carta" img-top img-alt="Card Image" text-variant="white" v-for="dato in pelicula" :key="dato.id" :img-src="`${dato.background}`" :style="styleObject">
-                <section :class="[{all2: dato.background }, {backgroundNo: !dato.background }]">
-                    <section class="cuerpo mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1" id="margen">
+            <b-card id="carta" img-top img-alt="Card Image" text-variant="white" v-for="dato in pelicula" :key="dato.id" :img-src="`${dato.background}`">
+                <article :class="[{all2: dato.background }, {backgroundNo: !dato.background }]">
+                    <article class="cuerpo mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1" id="margen">
                         <h3 id="titulo" class="white">{{dato.title}}</h3>
-                    </section>
-                    <section class="cuerpo mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1" id="margen">
-                        <section id="izq">
-                            <section :class="[{estreno: dato.active ==1}]">
-                            </section>
+                    </article>
+                    <article class="cuerpo mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1" id="margen">
+                        <article id="izq">
                             <img class="img-fluid" id="img" :src="`${dato.poster}`" alt="">
-                        </section>
-                        <section id="der">
-                            <section id="horarios" v-if="dato.projections">
-                                <section id="cineortega">
-                                    <section class="titular"><img id="logoentrada" src="../assets/entrada.png" alt=""><span id="titulosgrandes">{{dato.projections[0].cinema.cinema}}</span></section>
-                                    <section class="hour" v-if="currentRouteName() == 'cartelera'">
-                                        <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow" v-bind:style="time() <= getHumanDate(dat.hour) ? 'color: #ede60e':'color: #737571'">{{ dat.hour}} </span></section></section>
-                                    </section>
-                                    <section class="hour" v-else>
-                                    <article class="fecha" v-if="dato.projections[0].release_date"><span id="yellow">Fecha: {{dato.projections[0].release_date}}</span></article>
-                                    <section class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><section><span id="yellow">{{ dat.hour}} </span></section></section>
-                                    </section>
-                                    <a id="boton" type="button" class="btn-sm" :href="`${dato.buy}`"><b>Comprar entradas</b></a>
-                                </section>
-                            </section>
-                            <section id="edad-tiempo" v-if="dato.qualification"><span class="white">{{dato.qualification.abbreviation}} | {{dato.duration}}'</span></section>
-                            <section id="director" v-if="dato.director[0]">
+                        </article>
+                        <article id="der">
+                            <article id="horarios" v-if="dato.projections">
+                                <article id="cineortega">
+                                    <article class="titular"><img id="logoentrada" src="../assets/entrada.png" alt=""><span id="titulosgrandes">{{dato.projections[0].cinema.cinema}}</span></article>
+                                    <article class="fecha"><span>Fecha: {{dato.projections[0].release_date}}</span></article>
+                                    <article class="hour">
+                                        <article class="hourcontent" v-for="dat in dato.projections" :key="dat.id"><span id="yellow">{{ dat.hour}} </span></article>
+                                    </article><a id="boton" type="button" class="btn-sm" :href="`${dato.buy}`"><b>Comprar entradas</b></a>
+                                </article>
+                            </article>
+                            <article id="edad-tiempo" v-if="dato.qualification"><span class="white">{{dato.qualification.abbreviation}} | {{dato.duration}}'</span></article>
+                            <article id="director" v-if="dato.director[0]">
                                 <p id="titulosgrandes">Director: </p>
                                 <p id="gray">{{dato.director[0].director}}</p>
-                            </section>
-                            <section id="actores" v-if="dato.actors[0]">
-                                <section id="actor">
+                            </article>
+                            <article id="actores" v-if="dato.actors[0]">
+                                <article id="actor">
                                     <p id="titulosgrandes">Reparto:&nbsp;</p>
                                     <p id="gray" v-for="dat in dato.actors" :key="dat.id">{{dat.actor}},&nbsp;</p>
-                                </section>
-                            </section>
-                            <section id="sinopsis" v-if="dato.synopsis">
+                                </article>
+                            </article>
+                            <article id="sinopsis" v-if="dato.synopsis">
                                 <p id="titulosgrandes">Sinopsis: </p>
                                 <p id="gray">{{dato.synopsis}}</p>
-                            </section>
-                            <section id="container" class="embed-responsive embed-responsive-21by9" v-if="dato.trailer">
+                            </article>
+                            <article id="container" class="embed-responsive embed-responsive-21by9" v-if="dato.trailer">
                                 <iframe class="embed-responsive-item" :src="'//www.youtube.com/embed/'+getId(dato.trailer)" frameborder="0" width="16vw" height="9vh" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe>
-                            </section>
-                        </section>
-                    </section>
+                            </article>
+                        </article>
+                    </article>
                     <p id="texto" class="my-2 py-3 py-xl-4 my-xl-2 mx-lg-2 mx-xl-3 px-lg-3 px-xl-3 px-3 mx-1">La empresa no se hace responsable de posibles variaciones de horarios, salas y de más acciones por causa mayor.</p>
-                </section>
+                </article>
             </b-card>
         </PopupLightbox>
     </PopupRouterView>
-</article>
+</section>
 </template>
 
 <script>
-
 import PopupLightbox from './PopupLightbox.vue'
 import PopupOverlay from './PopupOverlay.vue'
 import PopupRouterView from './PopupRouterView.vue'
 import AppFooter from '../components/AppFooter.vue'
 import axios from 'axios'
-import moment from 'moment'
 export default {
   name: 'app-modal',
   components: {
@@ -73,18 +65,9 @@ export default {
     AppFooter
   },
   mounted () {
-    if (this.$route.name === 'cartelera') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
-    } else if (this.$route.name === 'proximamente') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
-    } else if (this.$route.name === 'teatros') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
-    }
+    axios.get(`http://localhost/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
   },
   methods: {
-    currentRouteName: function () {
-      return this.$route.name
-    },
     getId: function (url) {
       const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
       const match = url.match(regExp)
@@ -92,43 +75,25 @@ export default {
       return (match && match[2].length === 11)
         ? match[2]
         : null
-    },
-    time: function () {
-      console.log(moment(new Date().toLocaleTimeString(), 'HH:mm').format('HH:mm'))
-      return (moment(new Date().toLocaleTimeString(), 'HH:mm').format('HH:mm'))
-    },
-    getHumanDate: function (date) {
-      console.log(moment(date, 'HH:mm').format('HH:mm'))
-      return moment(date, 'HH:mm').format('HH:mm')
     }
   },
   data () {
     return {
-      pelicula: [],
-      styleObject: {
-        color: 'black',
-        border: '0.5px solid black'
-      }
+      pelicula: []
     }
   }
 }
 </script>
 
 <style scoped>
-a:hover {
-    color: black!important;
-    text-decoration: none!important;
-}
-.colorGray{
-    color: #737571;
-}
 .estreno {
     background: url('../assets/estreno.png') no-repeat;
-    height: 70px;
-    width: 70px;
+    height: 170px;
+    width: 170px;
     position: absolute;
-    transform: rotate(-90deg);
-    top: 10;
+    top: 0;
+    right: 0;
+    z-index: 999999999999999999;
 }
 
 #yellow {
@@ -166,7 +131,7 @@ p {
     gap: 2vw;
     background: url('/assets/negro.jpg');
     background-color: rgb(14, 14, 14);
-    margin-top: 0vw;
+    margin-top: -20vw;
     position: relative;
     z-index: 1000000;
 }
@@ -330,15 +295,6 @@ p {
 }
 
 @media screen and (max-width:475px) {
-    .estreno {
-        background: url('../assets/estreno.png') no-repeat;
-        height: 70px;
-        width: 70px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #texto {
         display: flex;
         justify-content: center;
@@ -355,7 +311,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -14vw;
         position: relative;
         z-index: 1000000;
     }
@@ -382,7 +338,7 @@ p {
     }
 
     .all2 {
-        margin-top: -20vw;
+        margin-top: -26vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -424,7 +380,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -15vw;
         position: relative;
         z-index: 1000000;
     }
@@ -445,28 +401,19 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -35vw;
         position: relative;
         z-index: 1000000;
     }
 
     .all2 {
-        margin-top: -40vw;
+        margin-top: -45vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
 @media screen and (min-width:475px) {
-    .estreno {
-        background: url('../assets/estrenomediano.png') no-repeat;
-        height: 120px;
-        width: 120px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #texto {
         display: flex;
         justify-content: center;
@@ -483,7 +430,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -11vw;
         position: relative;
         z-index: 1000000;
     }
@@ -506,11 +453,11 @@ p {
     }
 
     #titulo {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .all2 {
-        margin-top: -20vw;
+        margin-top: -22vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -552,7 +499,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -9vw;
         position: relative;
         z-index: 1000000;
     }
@@ -581,7 +528,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -8vw;
         position: relative;
         z-index: 1000000;
     }
@@ -604,11 +551,11 @@ p {
     }
 
     #titulo {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .all2 {
-        margin-top: -15vw;
+        margin-top: -19vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
@@ -649,32 +596,19 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -6vw;
         position: relative;
         z-index: 1000000;
     }
 
     .all2 {
-        margin-top: -10vw;
+        margin-top: -16vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 95%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
 @media screen and (min-width:1024px) {
-       #boton {
-        max-width: 10vw;
-        font-size: 1.2vw;
-    }
-    .estreno {
-        background: url('../assets/estreno90.png') no-repeat;
-        height: 90px;
-        width: 90px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #texto {
         display: flex;
         justify-content: center;
@@ -691,7 +625,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -6vw;
         position: relative;
         z-index: 1000000;
     }
@@ -714,11 +648,11 @@ p {
     }
 
     #titulo {
-        font-size: 45px;
+        font-size: 30px;
     }
 
     .all2 {
-        margin-top: -10vw;
+        margin-top: -20vw;
         background: rgb(14, 14, 14);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
     }
@@ -739,21 +673,21 @@ p {
     #cineortega {
         display: flex;
         flex-direction: row;
-        gap: 0.8vw;
+        gap: 1vw;
     }
 
+    #cineavenida {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cineomi {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width:1440px) {
-    .estreno {
-        background: url('../assets/estrenomediano.png') no-repeat;
-        height: 120px;
-        width: 120px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     .backgroundNo {
         padding: 0;
         width: 100%;
@@ -762,7 +696,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -5vw;
         position: relative;
         z-index: 1000000;
     }
@@ -771,9 +705,9 @@ p {
         font-size: 3vw;
     }
 
-       #boton {
-        max-width: 10vw;
-        font-size: 0.9vw;
+    #boton {
+        max-width: 16vh;
+        font-size: 1.5vh;
     }
 
     .cuerpo {
@@ -788,23 +722,9 @@ p {
     #carta {
         max-width: 1000px;
     }
-     .all2 {
-        margin-top: -10vw;
-        background: rgb(14, 14, 14);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
-    }
 }
 
 @media screen and (min-width:1940px) {
-    .estreno {
-        background: url('../assets/estreno160.png') no-repeat;
-        height: 160px;
-        width: 160px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #logoentrada {
         max-height: 30px;
         max-width: 30px;
@@ -812,10 +732,6 @@ p {
 
     * {
         font-size: 1.2vw;
-    }
-       #boton {
-        max-width: 4vw;
-        font-size: 1.4vw;
     }
 
     .cuerpo {
@@ -829,11 +745,6 @@ p {
 
     #carta {
         max-width: 1500px;
-    }
-         .all2 {
-        margin-top: -10vw;
-        background: rgb(14, 14, 14);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
@@ -882,23 +793,9 @@ p {
     #carta {
         max-width: 1800px;
     }
-         .all2 {
-        margin-top: -10vw;
-        background: rgb(14, 14, 14);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 0) 100%);
-    }
 }
 
 @media screen and (min-width:3560px) {
-    .estreno {
-        background: url('../assets/estreno200.png') no-repeat;
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #logoentrada {
         max-height: 55px;
         max-width: 55px;
@@ -923,15 +820,6 @@ p {
 }
 
 @media screen and (min-width:4560px) {
-    .estreno {
-        background: url('../assets/estreno250.png') no-repeat;
-        height: 250px;
-        width: 250px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     * {
         font-size: 1.1vw;
     }
@@ -951,21 +839,12 @@ p {
 }
 
 @media screen and (min-width:5560px) {
-    .estreno {
-        background: url('../assets/estreno350.png') no-repeat;
-        height: 350px;
-        width: 350px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     #logoentrada {
         max-height: 80px;
         max-width: 80px;
     }
 
-   * {
+    * {
         font-size: 1.4vw;
     }
 
@@ -984,15 +863,6 @@ p {
 }
 
 @media screen and (min-width:7560px) {
-    .estreno {
-        background: url('../assets/estreno500.png') no-repeat;
-        height: 500px;
-        width: 500px;
-        position: absolute;
-        transform: rotate(-90deg);
-        top: 10;
-    }
-
     .backgroundNo {
         padding: 0;
         width: 100%;
@@ -1001,7 +871,7 @@ p {
         gap: 2vw;
         background-image: url('/assets/negro.jpg');
         background-color: rgb(14, 14, 14);
-        margin-top: 0vw;
+        margin-top: -5vw;
         position: relative;
         z-index: 1000000;
     }
