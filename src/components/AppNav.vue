@@ -7,13 +7,16 @@
         <b-collapse id="nav-collapse" variant="dark" is-nav>
             <b-navbar-nav id="items">
                 <b-nav-item class="letra">
-                    <router-link  to="/">Cine</router-link >
+                    <router-link  to="/">Cartelera</router-link >
                 </b-nav-item>
                 <b-nav-item class="letra">
-                    <router-link  to="/teatro">Teatro</router-link>
+                    <router-link  to="/obrasteatroortega">Teatro Ortega</router-link>
                 </b-nav-item>
                 <b-nav-item class="letra" >
-                    <router-link  to="/promociones">Promociones</router-link>
+                    <router-link  to="/obrascineortega">Cines Ortega</router-link>
+                </b-nav-item>
+                 <b-nav-item class="letra" >
+                    <router-link  to="/obrasavenida">Multicines Avenida</router-link>
                 </b-nav-item>
                 <b-nav-item class="letra" >
                     <router-link  to="/contacto">Contacto</router-link>

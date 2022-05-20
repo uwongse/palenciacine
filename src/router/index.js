@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 const HomeView = () => import('@/views/HomeView.vue')
 const ContactoView = () => import('@/views/ContactoView.vue')
-const AboutView = () => import('@/views/AboutView.vue')
+const AllOrtegaView = () => import('@/views/AllOrtegaView.vue')
+const AllAvenidaView = () => import('@/views/AllAvenidaView.vue')
 const AppModal = () => import('@/components/AppModal.vue')
 const TeatroView = () => import('@/views/TeatroView.vue')
 const CineOrtegaView = () => import('@/views/CineOrtegaView.vue')
@@ -30,11 +31,6 @@ export default new Router({
       ]
     },
     {
-      path: '/promociones',
-      name: 'promociones',
-      component: AboutView
-    },
-    {
       path: '/contacto',
       name: 'contacto',
       component: ContactoView
@@ -57,9 +53,28 @@ export default new Router({
       component: CineOmyView
     },
     {
-      path: '/teatro',
-      name: 'teatro',
-      component: TeatroView
+      path: '/obrasteatroortega',
+      name: 'obrasteatroortega',
+      component: TeatroView,
+      children: [
+        {path: ':id/:names', name: 'obrasortega', component: AppModal}
+      ]
+    },
+    {
+      path: '/obrascineortega',
+      name: 'obrascineortega',
+      component: AllOrtegaView,
+      children: [
+        {path: ':id/:names', name: 'obrascineortegas', component: AppModal}
+      ]
+    },
+    {
+      path: '/obrasavenida',
+      name: 'obrasavenida',
+      component: AllAvenidaView,
+      children: [
+        {path: ':id/:names', name: 'obrascineavenida', component: AppModal}
+      ]
     },
     {
       path: '*', redirect: '/'
