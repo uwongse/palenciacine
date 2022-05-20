@@ -3,7 +3,7 @@
     <section class="difuminado">
         <section class="container-fluid">
             <section class="row mx-3">
-                <span>Cartelera</span>
+                <span>Hoy en Cartelera</span>
             </section>
         </section>
     </section>
