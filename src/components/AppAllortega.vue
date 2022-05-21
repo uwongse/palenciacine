@@ -5,7 +5,7 @@
     <section class="row">
         <section class="col">
              <section class="container-fluid">
-        <section class="row mx-3 my-4">
+        <section class="row mx-2 mb-4">
             <span>Hoy en Cartelera</span>
         </section>
     </section>
