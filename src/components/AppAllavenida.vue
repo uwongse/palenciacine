@@ -9,11 +9,11 @@
             <span>Hoy en Cartelera</span>
         </section>
     </section>
-                <section class="container-fluid">
+                <section class="container-fluid"  >
         <section class="row ">
             <section class="col mx-4 mt-3">
-            <section class="movie-container"  v-if="films.length">
-                <section class="movies-list">
+            <section class="movie-container" v-if="showComponent = true && films.length">
+                <section class="movies-list" >
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
                         <section class="product-image">
@@ -46,7 +46,7 @@
                     </section>
                 </section>
             </section>
-            <article v-else><span id="color" class="px-2">HOY CERRAMOS</span></article>
+            <section v-if="showComponent = true && !films.length"><span id="color" class="px-2">HOY CERRAMOS</span></section>
             </section>
             </section>
         </section>
@@ -61,6 +61,9 @@ export default {
   props: {
     films: {
       type: Array
+    },
+    showComponent: {
+      type: Boolean
     }
   },
   methods: {

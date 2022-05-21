@@ -11,7 +11,7 @@
                 <section class="container-fluid">
         <section class="row ">
             <section class="col mx-3 mt-3">
-            <section class="movie-container"  v-if="films.length">
+            <section class="movie-container"  v-if="showComponent = true && films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -60,6 +60,9 @@ export default {
   props: {
     films: {
       type: Array
+    },
+    showComponent: {
+      type: Boolean
     }
   },
   methods: {

@@ -1,9 +1,9 @@
 <template>
 <section class="home">
-    <app-carrusel :slide="slide"></app-carrusel>
-    <app-cartelera :movies="movies"></app-cartelera>
-    <app-teatro :teatro="teatro"></app-teatro>
-    <app-proximamente :films="films"></app-proximamente>
+    <app-carrusel  :slide="slide"></app-carrusel>
+    <app-cartelera  :movies="movies"></app-cartelera>
+    <app-teatro  :teatro="teatro"></app-teatro>
+    <app-proximamente  :films="films"></app-proximamente>
     <app-promociones></app-promociones>
 </section>
 </template>
@@ -24,7 +24,7 @@ export default {
   components: {
     AppFooter, AppCarrusel, AppTeatro, AppPromociones, AppModal, AppProximamente, AppCartelera
   },
-  mounted () {
+  created () {
     axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/moviestoday', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
     axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/moviesnottoday', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
     axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/teatro', {}).then(resp => { this.teatro = resp.data.data; console.log(resp.data.data) })

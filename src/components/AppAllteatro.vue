@@ -11,7 +11,7 @@
                 <section class="container-fluid">
         <section class="row ">
             <section class="col mx-3 mt-3">
-            <section class="movie-container"  v-if="films.length">
+            <section class="movie-container"  v-if="showComponent = true && films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -45,7 +45,7 @@
                     </section>
                 </section>
             </section>
-            <article v-else><span id="color" class="px-2">PRÓXIMAMENTE</span></article>
+            <section v-if="!films.length"><span id="color" class="px-2">HOY CERRAMOS</span></section>
             </section>
             </section>
         </section>
@@ -60,6 +60,9 @@ export default {
   props: {
     films: {
       type: Array
+    },
+    showComponent: {
+      type: Boolean
     }
   },
   methods: {
