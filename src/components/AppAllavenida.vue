@@ -12,10 +12,10 @@
                 <section class="container-fluid"  >
         <section class="row ">
             <section class="col mx-4 mt-3">
-            <section class="movie-container" v-if="showComponent = true && films.length">
+            <section class="movie-container" v-if="movies.length">
                 <section class="movies-list" >
                     <router-view />
-                    <section class="movie" v-for="movie in films" :key="movie.id">
+                    <section class="movie" v-for="movie in movies" :key="movie.id">
                         <section class="product-image">
                             <section :class="[{estreno: movie.active ==1 }]"></section>
                             <img id="img" :src="`${movie.poster}`" alt="">
@@ -46,7 +46,7 @@
                     </section>
                 </section>
             </section>
-            <section v-if="showComponent = true && !films.length"><span id="color" class="px-2">HOY CERRAMOS</span></section>
+            <section v-else><span id="color" class="px-2">HOY CERRAMOS</span></section>
             </section>
             </section>
         </section>
@@ -59,7 +59,7 @@ import moment from 'moment'
 export default {
   name: 'app-allavenida',
   props: {
-    films: {
+    movies: {
       type: Array
     },
     showComponent: {

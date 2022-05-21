@@ -65,7 +65,8 @@ export default new Router({
       name: 'obrascineortega',
       component: AllOrtegaView,
       children: [
-        {path: ':id/:names', name: 'obrascineortegas', component: AppModal}
+        {path: ':id/:names', name: 'obrascineortegas', component: AppModal},
+        {path: 'proximamente/:id/:names', name: 'proximamenteortega', component: AppModal}
       ]
     },
     {
@@ -73,7 +74,8 @@ export default new Router({
       name: 'obrasavenida',
       component: AllAvenidaView,
       children: [
-        {path: ':id/:names', name: 'obrascineavenida', component: AppModal}
+        {path: ':id/:names', name: 'obrascineavenida', component: AppModal},
+        {path: 'proximamente/:id/:names', name: 'proximamenteavenida', component: AppModal}
       ]
     },
     {
