@@ -1,6 +1,6 @@
 <template>
 <section class="home">
-    <app-carrusel  :slide="slide"></app-carrusel>
+    <app-carrusel v-if="slide.length" :slide="slide"></app-carrusel>
     <app-cartelera  :movies="movies"></app-cartelera>
     <app-teatro  :teatro="teatro"></app-teatro>
     <app-proximamente  :films="films"></app-proximamente>
