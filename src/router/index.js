@@ -36,8 +36,8 @@ export default new Router({
       component: ContactoView
     },
     {
-      path: '/contacto/cineortega',
-      name: 'cineortega',
+      path: '/contacto/cinesortega',
+      name: 'cinesortega',
       component: CineOrtegaView
     },
     {

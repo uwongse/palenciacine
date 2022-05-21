@@ -1,18 +1,18 @@
 
 <template>
 <article>
-    <div id="imagen"></div>
-<section class="container-fuild">
-    <section class="row">
-        <section class="col">
-             <section class="container-fluid">
-        <section class="row mx-2 mb-4">
+    <router-link to="/contacto/multicinesavenida"><div id="imagen"></div></router-link>
+         <div class="container-fluid">
+            <section class="row">
+                <section class="col">
+        <section class="col mx-3 mt-2">
             <span>Hoy en Cartelera</span>
         </section>
     </section>
                 <section class="container-fluid">
-        <section class="row mx-3">
-            <section class="movie-container" v-if="films.length">
+        <section class="row ">
+            <section class="col mx-4 mt-3">
+            <section class="movie-container"  v-if="films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -21,11 +21,11 @@
                             <img id="img" :src="`${movie.poster}`" alt="">
                         </section>
                         <section class="details">
-                            <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
+                            <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
                                 <h4>{{movie.projections[0].cinema.cinema}}</h4>
                             </router-link>
                             <section class="detalles">
-                                <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
+                                <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
                                     <section>
                                         <h2>{{movie.title}}</h2>
                                         <p>{{transformFecha(movie.projections[0].release_date)}}</p>
@@ -38,7 +38,7 @@
                                 </router-link>
                                 <button>
                                     <b-icon icon="bookmark-plus" font-scale="1"></b-icon>
-                                    <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}"><i>Más Información</i></router-link >
+                                    <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}"><i>Más Información</i></router-link >
                                 </button>
                                 <button><img id="logoentrada" src="../assets/entrada.png" alt=""><a :href="`${movie.buy}`"><i> Comprar Entradas</i></a></button>
                             </section>
@@ -46,12 +46,12 @@
                     </section>
                 </section>
             </section>
-             <article v-else><span id="color" class="px-2">HOY CERRAMOS</span></article>
+            <article v-else><span id="color" class="px-2">HOY CERRAMOS</span></article>
+            </section>
+            </section>
         </section>
     </section>
-        </section>
-    </section>
-</section>
+        </div>
 </article>
 </template>
 <script>

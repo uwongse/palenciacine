@@ -2,7 +2,7 @@
 <footer class="footer">
     <article class="container-fluid mt-5 py-4">
         <section class="logos mx-4">
-            <router-link to="/contacto/cineortega"><img id="app1" src="../assets/cineortegagris.png" alt=""></router-link>
+            <router-link to="/contacto/cinesortega"><img id="app1" src="../assets/cineortegagris.png" alt=""></router-link>
             <router-link to="/contacto/multicinesavenida"><img id="app1" src="../assets/avenidagris.png" alt=""></router-link>
             <router-link to="/contacto/cineomy"><img id="app1" src="../assets/omygris.png" alt=""></router-link>
             <router-link to="/contacto/teatroortega"><img id="app1" src="../assets/teatroortegagris.png" alt=""></router-link>
@@ -21,10 +21,6 @@
                         <img id="app2" src="../assets/insta.png">
                     </a>
                 </section>
-            </section>
-            <section class="sub">
-                <p id="white">Suscríbete</p>
-                <input id="input" type="email" placeholder="Correo electrónico">
             </section>
             <section class="appdown">
                 <p id="white">Descarga nuestra app</p>

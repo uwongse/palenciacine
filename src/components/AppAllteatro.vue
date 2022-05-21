@@ -1,17 +1,17 @@
 <template>
 <article>
     <router-link to="/contacto/teatroortega"><div id="imagen"></div></router-link>
-   <section class="container-fuild">
-    <section class="row">
-        <section class="col">
-             <section class="container-fluid">
-        <section class="row mx-2 mb-4">
+     <div class="container-fluid">
+            <section class="row">
+                <section class="col">
+        <section class="col mx-4 mt-2">
             <span>Obras de Teatro</span>
         </section>
     </section>
                 <section class="container-fluid">
-        <section class="row mx-3">
-            <section class="movie-container" v-if="films.length">
+        <section class="row ">
+            <section class="col mx-3 mt-3">
+            <section class="movie-container"  v-if="films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -45,12 +45,12 @@
                     </section>
                 </section>
             </section>
-             <article v-else><span id="color" class="px-2">HOY CERRAMOS</span></article>
+            <article v-else><span id="color" class="px-2">PRÓXIMAMENTE</span></article>
+            </section>
+            </section>
         </section>
     </section>
-        </section>
-    </section>
-</section>
+        </div>
 </article>
 </template>
 <script>
