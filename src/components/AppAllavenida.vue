@@ -21,11 +21,11 @@
                             <img id="img" :src="`${movie.poster}`" alt="">
                         </section>
                         <section class="details">
-                            <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
+                            <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
                                 <h4>{{movie.projections[0].cinema.cinema}}</h4>
                             </router-link>
                             <section class="detalles">
-                                <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
+                                <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}" >
                                     <section>
                                         <h2>{{movie.title}}</h2>
                                         <p>{{transformFecha(movie.projections[0].release_date)}}</p>
@@ -38,7 +38,7 @@
                                 </router-link>
                                 <button>
                                     <b-icon icon="bookmark-plus" font-scale="1"></b-icon>
-                                    <router-link class="item" :to="{path:`obrascineavenida/${movie.id}/${sanitizeTitle(movie.title)}`}"><i>Más Información</i></router-link >
+                                    <router-link class="item" :to="{path:`obrasavenida/${movie.id}/${sanitizeTitle(movie.title)}`}"><i>Más Información</i></router-link >
                                 </button>
                                 <button><img id="logoentrada" src="../assets/entrada.png" alt=""><a :href="`${movie.buy}`"><i> Comprar Entradas</i></a></button>
                             </section>

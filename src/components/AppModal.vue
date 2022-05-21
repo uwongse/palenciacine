@@ -897,7 +897,7 @@ p {
     }
 
     #carta {
-        max-width: 2000px;
+        max-width: 1800px;
     }
          .all2 {
         margin-top: -10vw;
@@ -1006,10 +1006,14 @@ p {
     }
 
     #carta {
+        max-width: 4000px;
+    }
+}
+@media screen and (min-width:6560px) {
+    #carta {
         max-width: 4500px;
     }
 }
-
 @media screen and (min-width:7560px) {
             #cineortega {
         display: flex;

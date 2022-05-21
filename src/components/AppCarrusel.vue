@@ -40,16 +40,22 @@ export default {
 </style>
 
 <style scoped>
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     #slideArriba {
         height: 30vw;
+        margin-top: 2vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #slideArriba {
+        height: 35vw;
         margin-top: 2vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     #slideArriba {
-        height: 40vw;
+        height: 35vw;
         margin-top: 4vw;
 
     }
@@ -58,8 +64,15 @@ export default {
 @media screen and (max-width: 425px) {
 
     #slideArriba {
-        height: 45vw;
-        margin-top: 5vw;
+        height: 40vw;
+        margin-top: 8vw;
+
+    }
+}
+@media screen and (max-width: 375px) {
+
+    #slideArriba {
+       height: 35vw;
 
     }
 }

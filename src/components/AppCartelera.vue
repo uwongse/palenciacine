@@ -349,10 +349,10 @@ span {
     }
 
     .difuminado {
-        height: 50px;
+        height: 60px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -50px;
+        margin-top: -40px;
         position: relative;
         z-index: 1;
 
@@ -362,7 +362,7 @@ span {
         color: white;
         object-fit: cover;
         margin-top: 35px;
-        font-size: 9vw;
+        font-size: 6vw;
     }
 }
 
@@ -448,17 +448,15 @@ span {
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         grid-gap: 20px;
     }
-
     .difuminado {
-        height: 50px;
+        height:80px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -30px;
+        margin-top: -40px;
         position: relative;
         z-index: 1;
 
     }
-
     span {
         color: white;
         object-fit: cover;
@@ -544,16 +542,6 @@ span {
         grid-gap: 20px;
     }
 
-    .difuminado {
-        height: 101px;
-        background: rgb(0, 0, 0);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -50px;
-        position: relative;
-        z-index: 1;
-
-    }
-
 }
 
 @media screen and (min-width: 375px) {
@@ -580,9 +568,34 @@ span {
     top: 0;
     right: 0;
 }
+        .difuminado {
+        height: 90px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+
+    }
+        span {
+        color: white;
+        object-fit: cover;
+        margin-top: 35px;
+        font-size: 6vw;
+    }
 
  }
 @media screen and (min-width: 625px) {
+        .difuminado {
+        height: 100px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        margin-top: -60px;
+        position: relative;
+        z-index: 1;
+
+    }
+
         .estreno{
     background: url('../assets/estreno90.png') no-repeat;
     height: 90px;
@@ -756,7 +769,7 @@ span {
         height: 110px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -90px;
+        margin-top: -70px;
         position: relative;
         z-index: 1;
 
@@ -840,10 +853,10 @@ span {
     }
 
     .difuminado {
-        height: 110px;
+        height: 120px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -90px;
+        margin-top: -75px;
         position: relative;
         z-index: 1;
 
@@ -853,7 +866,7 @@ span {
         color: white;
         object-fit: cover;
         margin-top: 40px;
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 }
 
@@ -936,10 +949,10 @@ span {
     }
 
     .difuminado {
-        height: 131px;
+        height: 120px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -100px;
+        margin-top: -75px;
         position: relative;
         z-index: 1;
 
@@ -1042,10 +1055,10 @@ span {
     }
 
     .difuminado {
-        height: 131px;
+        height: 150px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -100px;
+        margin-top: -90px;
         position: relative;
         z-index: 1;
 
@@ -1093,7 +1106,7 @@ span {
         height: 200px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -150px;
+        margin-top: -140px;
         position: relative;
         z-index: 1;
 
@@ -1185,7 +1198,7 @@ span {
         height: 250px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -150px;
+        margin-top: -140px;
         position: relative;
         z-index: 1;
 
@@ -1274,10 +1287,10 @@ span {
     }
 
     .difuminado {
-        height: 550px;
+        height: 500px;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -450px;
+        margin-top: -300px;
         position: relative;
         z-index: 1;
 
@@ -1386,15 +1399,6 @@ span {
     top: 0;
     right: 0;
 }
-    .difuminado {
-        height: 750px;
-        background: rgb(0, 0, 0);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-top: -450px;
-        position: relative;
-        z-index: 1;
-
-    }
 
     span {
         color: white;
@@ -1414,6 +1418,15 @@ span {
     }
 }
 @media screen and (min-width: 8000px) {
+        .difuminado {
+        height: 650px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
+        margin-top: -350px;
+        position: relative;
+        z-index: 1;
+
+    }
                     .estreno{
     background: url('../assets/estreno650.png') no-repeat;
     height: 650px;
