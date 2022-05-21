@@ -72,7 +72,7 @@ export default {
 
 <style>
 .VueCarousel-navigation-next {
-    background: url('../assets/15.png')no-repeat;
+    background: url('../assets/15.png') no-repeat;
     margin-right: -1vw !important;
     height: 60px;
     width: 35px;
@@ -96,7 +96,7 @@ export default {
 
 @media screen and (min-width:120px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -117,7 +117,7 @@ export default {
 
 @media screen and (min-width:320px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -138,7 +138,7 @@ export default {
 
 @media screen and (min-width:768px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -158,7 +158,7 @@ export default {
 
 @media screen and (min-width:1024px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -178,7 +178,7 @@ export default {
 
 @media screen and (min-width:1440px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -198,7 +198,7 @@ export default {
 
 @media screen and (min-width:2000px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 35px;
@@ -218,7 +218,7 @@ export default {
 
 @media screen and (min-width:3000px) {
     .VueCarousel-navigation-next {
-        background: url('../assets/15.png')no-repeat;
+        background: url('../assets/15.png') no-repeat;
         margin-right: -1vw !important;
         height: 60px;
         width: 55px;
