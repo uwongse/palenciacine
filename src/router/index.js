@@ -62,7 +62,6 @@ export default new Router({
     },
     {
       path: '/obrascineortega',
-      name: 'obrascineortega',
       component: AllOrtegaView,
       children: [
         {path: ':id/:names', name: 'obrascineortegas', component: AppModal},
@@ -71,7 +70,6 @@ export default new Router({
     },
     {
       path: '/obrasavenida',
-      name: 'obrasavenida',
       component: AllAvenidaView,
       children: [
         {path: ':id/:names', name: 'obrascineavenida', component: AppModal},

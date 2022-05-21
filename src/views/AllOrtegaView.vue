@@ -1,7 +1,7 @@
 <template>
 <section>
 <app-allortega :movies="movies"></app-allortega>
-    <app-proximamente v-if="films.length" :films="films"></app-proximamente>
+<app-proximamenteortega v-if="films.length" :films="films"></app-proximamenteortega>
   <app-promociones></app-promociones>
 </section>
 </template>
@@ -9,12 +9,12 @@
 <script>
 import AppAllortega from '@/components/AppAllortega.vue'
 import AppPromociones from '@/components/AppPromociones.vue'
-import AppProximamente from '@/components/AppProximamente.vue'
+import AppProximamenteortega from '@/components/AppProximamenteortega.vue'
 import axios from 'axios'
 export default {
   name: 'app-ortegas',
   components: {
-    AppAllortega, AppPromociones, AppProximamente
+    AppAllortega, AppPromociones, AppProximamenteortega
   },
   mounted () {
     axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/cineortega', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
