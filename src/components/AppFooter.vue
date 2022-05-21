@@ -53,6 +53,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style scoped>
+.footer{
+    height: 100%;
+    bottom: 0;
+}
 #white {
     color: #b9b9b9;
 }

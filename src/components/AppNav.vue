@@ -219,21 +219,21 @@ ul.dropdown-menu.dropdown-menu-right.show {
 
 @media screen and (max-width:2560px) {
     h2 {
-        font-size: 1.2vw;
+        font-size: 1.4vw;
     }
 
     .letra {
-        font-size: 1.2vw;
+        font-size: 1.4vw;
     }
 }
 
 @media screen and (max-width:1440px) {
     h2 {
-        font-size: 1.6vw;
+        font-size: 1.7vw;
     }
 
     .letra {
-        font-size: 1.6vw;
+        font-size: 1.7vw;
     }
 }
 
@@ -245,15 +245,16 @@ ul.dropdown-menu.dropdown-menu-right.show {
     .letra {
         font-size: 1.8vw;
     }
+
 }
 
 @media screen and (max-width:990px) {
     h2 {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .letra {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     #nav-collapse {
@@ -264,7 +265,7 @@ ul.dropdown-menu.dropdown-menu-right.show {
     }
 
     #topnav {
-        height: 15vw;
+        height: 8vw;
         display: flex;
         align-content: flex-start;
         justify-content: flex-end;
@@ -274,11 +275,11 @@ ul.dropdown-menu.dropdown-menu-right.show {
 
 @media screen and (max-width:768px) {
     h2 {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 
     .letra {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 
     #nav-collapse {
@@ -289,7 +290,7 @@ ul.dropdown-menu.dropdown-menu-right.show {
     }
 
     #topnav {
-        height: 16vw;
+        height: 10vw;
         display: flex;
         align-content: flex-start;
         justify-content: flex-end;

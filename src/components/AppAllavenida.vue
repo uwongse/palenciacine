@@ -1,17 +1,18 @@
 
 <template>
 <article>
+    <div id="imagen"></div>
 <section class="container-fuild">
     <section class="row">
-        <section class="col mt-5">
+        <section class="col">
              <section class="container-fluid">
         <section class="row mx-3 my-4">
-            <span>Peliculas Multicine Avenida</span>
+            <span>Hoy en Cartelera</span>
         </section>
     </section>
                 <section class="container-fluid">
         <section class="row mx-3">
-            <section class="movie-container">
+            <section class="movie-container" v-if="films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -45,6 +46,7 @@
                     </section>
                 </section>
             </section>
+             <article v-else><span id="color" class="px-2">HOY CERRAMOS</span></article>
         </section>
     </section>
         </section>
@@ -92,6 +94,22 @@ export default {
 </script>
 
 <style scoped>
+#color{
+    color: #ede60e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+}
+#imagen{
+    z-index: -10000000;
+    background: url("../assets/cineavenida.jpg") no-repeat bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 30vw;
+    width: 100%;
+}
 .estreno{
     background: url('../assets/estreno.png') no-repeat;
     min-height: 70px;
@@ -354,6 +372,10 @@ span {
 }
 
 @media screen and (min-width: 320px) {
+        #imagen{
+    height: 50vw;
+    width: 100%;
+}
     .estreno{
     background: url('../assets/estreno.png') no-repeat;
     height: 70px;
@@ -539,6 +561,10 @@ span {
 }
  }
 @media screen and (min-width: 625px) {
+            #imagen{
+    height: 40vw;
+    width: 100%;
+}
             .estreno{
     background: url('../assets/estreno90.png') no-repeat;
     height: 90px;
@@ -709,6 +735,10 @@ span {
 }
 
 @media screen and (min-width: 925px) {
+                #imagen{
+    height: 30vw;
+    width: 100%;
+}
     #logoentrada {
         max-height: 2vw;
         max-width: 2vw;

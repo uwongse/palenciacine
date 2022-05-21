@@ -10,7 +10,7 @@
                             <img class="fototeaotro" src="../assets/teatroblanco.png" alt="teatro-ortega">
                             <p class="letra">Ven a disfrutar de una sesion de teatro en Palencia</p>
                             <button type="button" class="btn-sm">
-                                <router-link to="/teatro"><b>¡Quiero ir al Teatro!</b>
+                                <router-link to="/obrasteatroortega"><b>¡Quiero ir al Teatro!</b>
                                 </router-link>
                             </button>
                         </section>

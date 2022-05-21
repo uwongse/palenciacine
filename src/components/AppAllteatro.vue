@@ -1,16 +1,17 @@
 <template>
 <article>
-<section class="container-fuild">
-    <section class="row">
-        <section class="col mt-5">
-             <section class="container-fluid">
-        <section class="row mx-3 my-4">
+    <router-link to="/contacto/teatroortega"><div id="imagen"></div></router-link>
+     <div class="container-fluid" id="top">
+            <section class="row">
+                <section class="col">
+        <section class="col mx-3 mt-2">
             <span>Obras de Teatro</span>
         </section>
     </section>
                 <section class="container-fluid">
-        <section class="row mx-3">
-            <section class="movie-container">
+        <section class="row ">
+            <section class="col mx-3 mt-3">
+            <section class="movie-container"  v-if="films.length">
                 <section class="movies-list">
                     <router-view />
                     <section class="movie" v-for="movie in films" :key="movie.id">
@@ -44,11 +45,12 @@
                     </section>
                 </section>
             </section>
+            <article v-else><span id="color" class="px-2">PRÓXIMAMENTE</span></article>
+            </section>
+            </section>
         </section>
     </section>
-        </section>
-    </section>
-</section>
+        </div>
 </article>
 </template>
 <script>
@@ -86,11 +88,42 @@ export default {
       var date = moment(fecha, 'YYYY/MM/DD')
       return date.format('dddd D [de] MMMM ').toUpperCase()
     }
+  },
+  data () {
+    return {
+      styleObject: {
+        color: 'black',
+        border: '0.5px solid black'
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
+#color{
+    color: #ede60e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+}
+#top{
+    z-index: 100000;
+}
+
+.bajar{
+    margin-top: 5vw;
+}
+#imagen{
+    z-index: -10000000;
+    background: url("../assets/cineortega.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 30vw;
+    width: 100%;
+}
 .estreno{
     background: url('../assets/estreno.png') no-repeat;
     min-height: 70px;
@@ -353,6 +386,10 @@ span {
 }
 
 @media screen and (min-width: 320px) {
+    #imagen{
+    height: 50vw;
+    width: 100%;
+}
     .estreno{
     background: url('../assets/estreno.png') no-repeat;
     height: 70px;
@@ -538,6 +575,10 @@ span {
 }
  }
 @media screen and (min-width: 625px) {
+        #imagen{
+    height: 40vw;
+    width: 100%;
+}
             .estreno{
     background: url('../assets/estreno90.png') no-repeat;
     height: 90px;
@@ -708,6 +749,10 @@ span {
 }
 
 @media screen and (min-width: 925px) {
+            #imagen{
+    height: 30vw;
+    width: 100%;
+}
     #logoentrada {
         max-height: 2vw;
         max-width: 2vw;

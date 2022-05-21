@@ -463,7 +463,7 @@ span {
         color: white;
         object-fit: cover;
         margin-top: 35px;
-        font-size: 9vw;
+        font-size: 8vw;
     }
 }
 
@@ -554,12 +554,6 @@ span {
 
     }
 
-    span {
-        color: white;
-        object-fit: cover;
-        margin-top: 35px;
-        font-size: 9vw;
-    }
 }
 
 @media screen and (min-width: 375px) {

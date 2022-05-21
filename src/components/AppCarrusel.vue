@@ -42,15 +42,15 @@ export default {
 <style scoped>
 @media screen and (max-width: 1024px) {
     #slideArriba {
-        height: 40vw;
-        margin-top: 5vw;
+        height: 30vw;
+        margin-top: 2vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     #slideArriba {
-        height: 50vw;
-        margin-top: 5vw;
+        height: 40vw;
+        margin-top: 4vw;
 
     }
 }
@@ -58,7 +58,7 @@ export default {
 @media screen and (max-width: 425px) {
 
     #slideArriba {
-        height: 50vw;
+        height: 45vw;
         margin-top: 5vw;
 
     }
