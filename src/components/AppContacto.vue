@@ -50,7 +50,7 @@
                     <p class="title" id="titulosgrandes">Conoce nuestras salas</p>
                 </section>
                 <section class="movies-list">
-                    <router-link to="/contacto/cineortega">
+                    <router-link to="/contacto/cinesortega">
                         <section class="product-image">
                             <img id="item" class="img-fluid card-img" src="@/assets/cineortega.jpg" alt="">
                             <section class="card-title">

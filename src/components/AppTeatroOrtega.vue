@@ -21,7 +21,15 @@
                             </section>
                         </section>
                         <section id="der" class="z-depth-1-half map-container">
-                            <p>texto descriptivo Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de sentido. También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede </p>
+                            <p>
+                            Construido en el año 1937 por el arquitecto Luis Cazcón y reformado posteriormente en 1997 por los arquitectos Luis Gutiérrez y Juan Luis Gutiérrez.
+                            Dedicado a espectáculos de ópera, teatro, danza, conciertos, cine y congresos. Dispone de un puesto de control de cine e iluminación en fondo de la platea.
+                            Aforo: 689
+                            Camerinos
+                            Individuales: 2
+                            Colectivos: 3
+                            Capacidad: 10
+                            </p>
                             <section class="mapa">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.051618920282!2d-4.532073953519285!3d42.0075164185665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd47b04807c1ffd7%3A0x274b8c5df000b430!2sCines%20Teatro%20Ortega!5e0!3m2!1ses!2ses!4v1647943009187!5m2!1ses!2ses" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </section>
