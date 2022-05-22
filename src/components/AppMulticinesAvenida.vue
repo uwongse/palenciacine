@@ -21,7 +21,7 @@
                             </section>
                         </section>
                         <section id="der" class="z-depth-1-half map-container">
-                            <p>Avd. Valladolid, 10. Proyecto de construcción firmado en 1947 por el arquitecto Luis Carlón e inaugurado edificio en 1955 con el nombre de Cine Gran Vía, aunque en 1963 ya adquirió el nombre actual. En 1986 se reformó para habilitar los actuales Multicines Avenida (7 salas). De la misma empresa que el Cine Ortega, con motivo de la pandemia 2020-21, los locales se vieron afectados.</p>
+                            <p>Avd. Valladolid, 10. Proyecto de construcción firmado en 1947 por el arquitecto Luis Carlón e inaugurado edificio en 1955 con el nombre de Cine Gran Vía, aunque en 1963 ya adquirió el nombre actual. En 1986 se reformó para habilitar los actuales Multicines Avenida (7 salas).</p>
                             <section class="mapa">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7102.83518935535!2d-4.531838307307388!3d42.00264625748182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd47b0310ce1a861%3A0xd2c91f7a46491f9e!2sMulticines%20Avenida!5e0!3m2!1ses!2ses!4v1647955712053!5m2!1ses!2ses" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </section>

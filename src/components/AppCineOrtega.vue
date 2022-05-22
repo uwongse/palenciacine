@@ -2,7 +2,7 @@
 <article>
     <section id="section">
         <section id="opcacidad">
-            <section id="contenido" class="mx-5">
+            <section id="contenido" class="mx-lg-5 mx-2">
                 <section id="interior">
                     <router-view />
                     <section id="titulo">
@@ -120,7 +120,7 @@ iframe {
 
 #section {
     z-index: 1000000;
-    background: url("../assets/cineortega.jpg") no-repeat center;
+    background: url("../assets/cineavenida.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

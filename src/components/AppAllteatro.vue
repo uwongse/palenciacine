@@ -45,7 +45,7 @@
                     </section>
                 </section>
             </section>
-            <section v-if="!films.length"><span id="color" class="px-2">HOY CERRAMOS</span></section>
+            <section v-if="!films.length"><span id="color" class="px-2">PRÓXIMAMENTE</span></section>
             </section>
             </section>
         </section>
