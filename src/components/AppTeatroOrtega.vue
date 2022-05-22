@@ -122,7 +122,7 @@ iframe {
 
 #section {
     z-index: 1000000;
-    background: url("../assets/cineavenida.jpg") no-repeat center;
+    background: url("../assets/cineortega.jpg") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -131,9 +131,9 @@ iframe {
     height: 900px;
 }
 
-@media screen and (min-width: 3000px) {
+@media screen and (min-width: 2000px) {
     #section {
-        height: 60vw;
+        height: 80vw;
     }
 
     p {
@@ -146,8 +146,20 @@ iframe {
     }
 
     #logoimg {
-        min-width: 60px;
-        min-height: 60px;
+        min-width: 40px;
+        min-height: 40px;
+    }
+}
+@media screen and (min-width: 5000px) {
+      #logoimg {
+        min-width: 80px;
+        min-height: 80px;
+    }
+}
+@media screen and (min-width: 8000px) {
+      #logoimg {
+        min-width: 145px;
+        min-height: 140px;
     }
 }
 
@@ -158,14 +170,10 @@ iframe {
 
 }
 
-@media screen and (max-width: 2560px) {
-    #section {
-        height: 1400px;
-    }
-
-}
-
 @media screen and (min-width: 1440px) and (max-width: 2000px) {
+        p {
+        font-size: 1.2vw;
+    }
     #section {
         height: 1100px;
     }
