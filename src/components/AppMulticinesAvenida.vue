@@ -167,7 +167,7 @@ iframe {
         font-size: 1.2vw;
     }
     #section {
-        height: 1100px;
+        height: 1400px;
     }
 }
 @media screen and (max-width:1440px) {
