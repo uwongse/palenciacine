@@ -50,6 +50,14 @@ export default {
 </script>
 
 <style>
+.dropdown{
+    color: #c6d1de;
+    text-decoration: none!important;
+}
+h2 {
+    color: #c6d1de;
+    text-decoration: none!important;
+}
 a:visited {
     color: #c6d1de;
     text-decoration: none!important;

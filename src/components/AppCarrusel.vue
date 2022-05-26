@@ -1,6 +1,6 @@
 <template>
 <section id="carrusel">
-    <b-carousel id="carousel1" :interval="4000" controls indicators background="#141414">
+    <b-carousel id="carousel1" :interval="8000" controls indicators background="#141414">
         <b-carousel-slide id="slideArriba"  v-for="s in slide" :key="s.id">
             <template #img>
                <a :href="`${s.url}`"><img id="image" class="d-block img-fluid w-100 h-100" :src="`${s.image}`" :alt="`${s.title}`"></a>

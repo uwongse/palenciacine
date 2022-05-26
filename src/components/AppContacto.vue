@@ -147,6 +147,7 @@ export default {
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: white !important;
 }
 
 #titulosgrandes {
