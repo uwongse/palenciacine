@@ -17,8 +17,8 @@ export default {
     AppAllavenida, AppPromociones, AppProximamenteavenida
   },
   mounted () {
-    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/avenida', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
-    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/proximamenteavenida', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://laravelpanel.herokuapp.com/api/avenida', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://laravelpanel.herokuapp.com/api/proximamenteavenida', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
   },
   data () {
     return {

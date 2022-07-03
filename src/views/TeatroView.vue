@@ -15,7 +15,7 @@ export default {
     AppAllteatro, AppPromociones
   },
   mounted () {
-    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/teatroortega', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data); this.showComponent = true })
+    axios.get('https://laravelpanel.herokuapp.com/api/teatroortega', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data); this.showComponent = true })
   },
   data () {
     return {

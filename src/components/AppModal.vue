@@ -77,26 +77,26 @@ export default {
   },
   mounted () {
     if (this.$route.name === 'cartelera') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     } else if (this.$route.name === 'proximamente') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     } else if (this.$route.name === 'teatros') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
     if (this.$route.name === 'obrasortega') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/teatro/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
     if (this.$route.name === 'obrascineortegas') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
     if (this.$route.name === 'obrascineavenida') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
     if (this.$route.name === 'proximamenteavenida') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
     if (this.$route.name === 'proximamenteortega') {
-      axios.get(`https://seashell-app-se7bo.ondigitalocean.app/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
+      axios.get(`https://laravelpanel.herokuapp.com/api/movie/next/${this.$route.params.id}`).then(resp => { this.pelicula = resp.data.data; console.log('carta', resp.data.data[0]); console.log('id', this.$route.params.id) })
     }
   },
   methods: {

@@ -17,8 +17,8 @@ export default {
     AppAllortega, AppPromociones, AppProximamenteortega
   },
   mounted () {
-    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/cineortega', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
-    axios.get('https://seashell-app-se7bo.ondigitalocean.app/api/proximamentecineortega', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://laravelpanel.herokuapp.com/api/cineortega', {}).then(resp => { this.movies = resp.data.data; console.log(resp.data.data) })
+    axios.get('https://laravelpanel.herokuapp.com/api/proximamentecineortega', {}).then(resp => { this.films = resp.data.data; console.log(resp.data.data) })
   },
   data () {
     return {
